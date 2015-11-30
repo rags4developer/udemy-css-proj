@@ -40,10 +40,11 @@ strong {
 
 /*
 An element whose clear property is set to both will start below all left-floated & right floated (hence "both") boxes in the same block formatting context (i.e same parent or containing element).
+*/
 .clearfix {
 	clear: both; 
 }
-*/
+
 
 header#main-header {
 	border-bottom: 4px solid #4ea0d8;/*size type color*/
