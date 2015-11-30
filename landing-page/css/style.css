@@ -32,3 +32,9 @@ h4 {
 	font-size: 19px;
 	margin:10px 0;
 }
+
+/*We need to define the style for strong tag because reset.css file rests its default style.*/
+strong {
+	font-weight:bold;
+}
+
