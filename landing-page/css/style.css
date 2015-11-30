@@ -45,3 +45,6 @@ An element whose clear property is set to both will start below all left-floated
 }
 */
 
+header#main-header {
+	border-bottom: 4px solid #4ea0d8;/*size type color*/
+}
