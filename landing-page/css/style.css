@@ -48,3 +48,8 @@ An element whose clear property is set to both will start below all left-floated
 header#main-header {
 	border-bottom: 4px solid #4ea0d8;/*size type color*/
 }
+
+#logo {
+	display: block; /*margin:auto; can center only block elements. Images are displayed inline by default. So, we change their display to block.*/
+	margin: auto;
+}
