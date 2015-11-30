@@ -60,3 +60,13 @@ header#main-header {
 	padding: 10px;
 	margin-bottom: 20px;
 }
+
+#sub-1 {
+	float: left;
+	width: 48%;/*Not 50 for margins etc.*/
+}
+
+#sub-2 {
+	float: left;
+	width: 48%;/*Not 50 for margins etc.*/
+}
