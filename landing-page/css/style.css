@@ -3,3 +3,11 @@ body{
 	font-size: 15px;
 	line-height: 1.5em;
 }
+
+#container {
+	width: 70%;
+	margin: 10px auto;
+	background: #fff;/*hex code for white*/
+	overflow: auto;
+}
+
