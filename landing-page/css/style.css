@@ -53,3 +53,10 @@ header#main-header {
 	display: block; /*margin:auto; can center only block elements. Images are displayed inline by default. So, we change their display to block.*/
 	margin: auto;
 }
+
+#main-text {
+	text-align: center;
+	color: #333;
+	padding: 10px;
+	margin-bottom: 20px;
+}
