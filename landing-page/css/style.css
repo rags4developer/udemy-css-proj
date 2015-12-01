@@ -71,3 +71,7 @@ header#main-header {
 	float: left;
 	width: 48%;/*Not 50 for margins etc.*/
 }
+
+.points li{
+	margin-bottom: 30px;
+}
