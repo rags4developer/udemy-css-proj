@@ -72,6 +72,10 @@ header#main-header {
 	width: 48%;/*Not 50 for margins etc.*/
 }
 
-.points li{
+.points li {
 	margin-bottom: 30px;
+}
+
+.points img {
+	float: left;
 }
