@@ -167,3 +167,25 @@ footer #main-footer {
 	border-top: #ccc solid 1px;
 	color: #aaa;
 }
+
+@media(max-width: 960px) {
+	#container {
+		width: 80%;/*increasing width when screen size decreases.*/
+	}
+
+	h1 {
+		font-size: 33px;/*decreased the font size.*/
+	}
+
+	#sub-1, #sub-2 {
+		float: none; /*we want them to be stacked instead of being floated left and right, resp.*/
+		width: 100%; /*occupy full width of the element that contains these two divs.*/
+	}
+	.points li {
+		background: #eee;
+		padding: 8px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+}
