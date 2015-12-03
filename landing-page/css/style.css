@@ -201,3 +201,9 @@ footer #main-footer {
 		margin-bottom: 20px;
 	}
 }
+
+@media(max-width: 568px) {
+	h1{
+		font-size: 22px;
+	}
+}
