@@ -95,9 +95,14 @@ header#main-header {
 	background: #f4f4f4;
 }
 
+#content-header {
+	border-bottom: #ddd solid 1px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
 .content-footer {
 	border-top: #ddd solid 1px;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 }
-
