@@ -181,11 +181,16 @@ footer #main-footer {
 		float: none; /*we want them to be stacked instead of being floated left and right, resp.*/
 		width: 100%; /*occupy full width of the element that contains these two divs.*/
 	}
+
 	.points li {
 		background: #eee;
 		padding: 8px;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
 		border-radius: 10px;
+	}
+	
+	.points img {
+		margin-top: 7px;
 	}
 }
