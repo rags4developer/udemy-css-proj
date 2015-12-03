@@ -193,4 +193,11 @@ footer #main-footer {
 	.points img {
 		margin-top: 7px;
 	}
+
+	#testimonial img {
+		float: none;
+		margin: auto; /*to center the image inside its parent container.*/
+		display: block;/*Img is an inline element. margin:auto works only for block elements.*/
+		margin-bottom: 20px;
+	}
 }
