@@ -161,3 +161,9 @@ http://learnlayout.com/inline-block.html */
 	float: left;
 	margin-right: 20px;
 }
+
+footer #main-footer {
+	text-align: center;
+	border-top: #ccc solid 1px;
+	color: #aaa;
+}
