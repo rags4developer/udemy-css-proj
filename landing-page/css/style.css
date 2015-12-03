@@ -95,6 +95,19 @@ header#main-header {
 	background: #f4f4f4;
 }
 
+#contact-form div {
+	margin-bottom: 20px;
+}
+
+/*We need to make the label boxes of the form of same width. 
+If we display the labels as inline items, then we can set width. 
+http://learnlayout.com/inline-block.html */
+#contact-form label {
+	display: inline-block;
+	width: 100px;
+	font-weight: bold;
+}
+
 #content-header {
 	border-bottom: #ddd solid 1px;
 	margin-bottom: 20px;
