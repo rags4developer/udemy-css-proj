@@ -45,6 +45,17 @@ An element whose clear property is set to both will start below all left-floated
 	clear: both; 
 }
 
+#content-header {
+	border-bottom: #ddd solid 1px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.content-footer {
+	border-top: #ddd solid 1px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
 
 header#main-header {
 	border-bottom: 4px solid #4ea0d8;/*size type color*/
@@ -133,14 +144,9 @@ http://learnlayout.com/inline-block.html */
 	cursor: pointer;
 }
 
-#content-header {
-	border-bottom: #ddd solid 1px;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-}
-
-.content-footer {
-	border-top: #ddd solid 1px;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
+#contact-form .content-footer p {
+	font-style: italic;
+	text-align: center;
+	color: #666;
+	font-size: 80%;
 }
