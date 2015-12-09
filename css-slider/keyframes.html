@@ -15,6 +15,30 @@ project later.-->
 				height: 150px;
 				position: relative;
 				background: #000;
+				-webkit-animation: objectmove 5s infinite;
+				animation: objectmove 5s infinite; <!--animation, duration, time-->
+			}
+
+			<!--Setting up the keyframes. 'objectmove' is the name of the
+			animation.-->
+			@-webkit-keyframes objectmove {
+				<!--Define points of our animation in terms of percentage of the 
+				time we wanted our animation to run, i.e. 5 sec.-->
+				0%		{top: 0px; left: 0px; background: #000;}
+				25%		{top: 0px; left: 300px; background: red;}
+				50%		{top: 300px; left: 300px; background: blue;}
+				75%		{top: 300px; left: 0px; background: blue;}
+				100%	{top: 0px; left: 0px; background: #000;}
+			}
+
+			@keyframes objectmove {
+				<!--Define points of our animation in terms of percentage of the 
+				time we wanted our animation to run, i.e. 5 sec.-->
+				0%		{top: 0px; left: 0px; background: #000;}
+				25%		{top: 0px; left: 300px; background: red;}
+				50%		{top: 300px; left: 300px; background: blue;}
+				75%		{top: 300px; left: 0px; background: blue;}
+				100%	{top: 0px; left: 0px; background: #000;}
 			}
 		</style>
 	</head>
