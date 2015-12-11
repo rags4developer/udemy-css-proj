@@ -46,7 +46,7 @@ ul.thumbs img{
 	border: #333 solid 4px;
 }
 
-ul.slide{
+ul.slides{
 	overflow: hidden;
 	clear: both;
 	border: #333 solid 4px;
@@ -56,5 +56,26 @@ ul.slides, ul.slides li, ul.slides a, ul.slides img{
 	width: 705;
 	height: 350px;
 	position: relative;
+}
+
+ul.thumbs li a:hover span{
+	position: absolute;
+	z-index: 101;
+	bottom: -30px;
+	left: -22px;
+	display: block;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	border-radius: 3px;
+
+	-webkit-box-shadow: 0px 1px 0px rgba(0,0,0, 0.4);
+	-moz-box-shadow: 0px 1px 0px rgba(0,0,0, 0.4);
+	box-shadow: 0px 1px 0px rgba(0,0,0, 0.4);
+
+	background: #fff; /*older browsers*/
+	-moz-background: linear-gradient(top, #fff 0%, #bcbcbc 100%);
+	-webkit-background: linear-gradient(top, #fff 0%, #bcbcbc 100%);
+	background: linear-gradient(top, #fff 0%, #bcbcbc 100%);
 }
 
