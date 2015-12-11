@@ -9,4 +9,23 @@
 
 body{
 	background: #465c8f url(../img/bg-image.jpg) repeat-x;
+	font-family: 'Arial', 'sans-serif';
+}
+
+#container{
+	width: 718px;
+	overflow: hidden;
+	margin: 40px auto;
+}
+
+h1{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ul.thumbs li{
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 9px;
 }
