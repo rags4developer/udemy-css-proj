@@ -7,3 +7,6 @@
 	list-style: none;
 }
 
+body{
+	background: #465c8f url(../img/bg-image.jpg) repeat-x;
+}
