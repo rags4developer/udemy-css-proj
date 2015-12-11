@@ -46,3 +46,15 @@ ul.thumbs img{
 	border: #333 solid 4px;
 }
 
+ul.slide{
+	overflow: hidden;
+	clear: both;
+	border: #333 solid 4px;
+}
+
+ul.slides, ul.slides li, ul.slides a, ul.slides img{
+	width: 705;
+	height: 350px;
+	position: relative;
+}
+
