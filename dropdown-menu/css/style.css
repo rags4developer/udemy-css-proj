@@ -1,0 +1,38 @@
+body{
+	font-family: 'Arial', Helvetica, sans-serif;
+	background: #f4f4f4;
+}
+
+#menu, #menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu{
+	width: 90%;
+	margin: 60px auto;
+	border: 1px solid #107677;
+	background: #111;/*For older browsers which cannot support border gradients.*/
+	background: linear-gradient(#1ebdbe, #107677);
+	border-radius: 6px;
+	box-shadow: 0 2px 2px #ccc;
+}
+
+/* The micro clearfix hack by nicolas gallagher- The following two selectors
+form the hack. They let us avoid putting any extra divs in the html to do a 
+clear-fix. Disabled for now because there are no visual changes in the page
+after adding them. Will uncomment them later.
+*/
+
+/*
+#menu:before, #menu:after{
+	content:"";
+	display: block;
+}
+
+#menu:after{
+	clear: both;
+}
+*/
+
