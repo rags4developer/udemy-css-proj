@@ -19,26 +19,54 @@ body{
 	box-shadow: 0 2px 2px #ccc;
 }
 
-/* The micro clearfix hack by nicolas gallagher- The following two selectors
-form the hack. They let us avoid putting any extra divs in the html to do a 
-clear-fix. Disabled for now because there are no visual changes in the page
-after adding them. Will uncomment them later.
-*/
-
-/*
-#menu:before, #menu:after{
-	content:"";
-	display: block;
-}
-
-#menu:after{
-	clear: both;
-}
-*/
-
+/*Floating all LI left to make them appear side by side in the navigation 
+menu. We could try to see if  display:inline works as well. later...*/
 #menu li{
 	float: left;
 	background: url(../img/sep.png) no-repeat;
 	position: relative;
 }
 
+/* The above code causes a PROBLEM. The menu background will be collapsed to a thin line &
+we won't see any of the list items in the menu.
+*/
+
+/* Why does the problem occur ? 
+Detailed answer in notes folder or link-http://complexspiral.com/publications/containing-floats/
+
+Short answer -
+Floated elements stack horizontally like inline elements and UNlike block elements which stack vertically. 
+Also, floated elements (eg. our list items) stick out of their containing element (eg. our menu).This is 
+desired and is NOT a bug in CSS.
+*/
+
+/* How to fix the problem ?
+Use the micro clearfix hack/css code by Nicolas Gallagher given below.
+*/
+
+/* How does the above hack work ?
+When we put floated elements in an element, the bottom of the containing element will end at the end
+of the float. To make it go beyond the float, we must do two things:
+
+Step 1- Put a BLOCK level element after the floated elements
+Step 2- Ensure that the block level element appears after all floated elements.
+
+The before & after pseudo elements let you put content before & after the existing contents (eg. 
+list items in menu) of an element (e.g our menu). When we set the clear property of an element
+(eg. :after of menu), then the element will start only after BOTH left & right floated elements
+(eg. list items in menu).
+
+*/
+
+/*Step 1*/
+#menu:before, #menu:after{
+	content:""; /*blank content*/
+	display: block; /**/
+	/*I doubt if the menu:before element was needed. I saw no changes after removing it. 
+	Might be needed later. Let's see.*/
+}
+
+/*Step 2*/
+#menu:after{
+	clear: both;
+}

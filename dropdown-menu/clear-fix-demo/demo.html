@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body {
+				border: 1px solid black;
+			}
+
+			#menu{
+				margin: 20px;
+				padding: 10px;
+				width: 30%;
+				border: 1px solid black;
+				background: #f2f2f2; /*Grayish color*/
+			}
+			
+			span{
+				padding: 1px;
+				border: 2px dotted black;
+			}
+			
+			ul{
+				list-style: none;/*removes bullets*/
+				padding: 0;
+				margin: 0;
+			}
+
+			li{
+				border: 1px solid black;
+				margin: 10px;
+				float: left; /*display li like inline elements instead of block.*/
+			}
+
+		</style>
+	</head>
+	<body>
+		The BODY...
+		<div id="menu">
+			<span>DIV and LI are block level elements...</span>
+			<ul>
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+			<div id="the-clearfix">Try to remove the clearfix div and see what happens!...</div>
+		</div>
+	</body>
