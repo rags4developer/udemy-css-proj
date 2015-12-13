@@ -118,3 +118,13 @@ It will NOT select elements of type Y which occur inside the children.
 	margin: 0 0 0 20px;
 	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
 }
+
+/*Links in the sub menus of the items in nav menu*/
+#menu ul a{
+	padding: 10px;/*The effect: gap between sub menu & child menu increases.*/
+	width: 130px;/*The effect: effect of above line reversed, gap decreases.*/
+	display: block;
+	white-space: nowrap;
+	float: none; /*Is this needed ?*/
+	text-transform: none; /*to control the case of text.*/
+}
