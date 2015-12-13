@@ -70,3 +70,12 @@ list items in menu) of an element (e.g our menu). When we set the clear property
 #menu:after{
 	clear: both;
 }
+
+#menu li{
+	float: left;/*Is this really needed ?*/
+	padding: 12px 30px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: bold 12px Arial, Helvetica;
+}
