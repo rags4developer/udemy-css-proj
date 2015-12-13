@@ -107,3 +107,14 @@ It will NOT select elements of type Y which occur inside the children.
 	visibility: visible;
 	margin: 0;
 }
+
+/*Code for the menus of the sub menus.*/
+#menu ul ul{
+	top:0;
+	/*To make them open on the right side of their parent ul. In chrome developer tools > elements tab >
+	right side computed tab, we see that width of parent ul is 154. To put a small gap between the child
+	& parent ul, we set it to 155 instead of 150 in the tutorial.*/
+	left: 155px; 
+	margin: 0 0 0 20px;
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+}
