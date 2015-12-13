@@ -36,3 +36,9 @@ after adding them. Will uncomment them later.
 }
 */
 
+#menu li{
+	float: left;
+	background: url(../img/sep.png) no-repeat;
+	position: relative;
+}
+
