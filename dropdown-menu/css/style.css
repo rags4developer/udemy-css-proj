@@ -22,7 +22,7 @@ body{
 /*Floating all LI left to make them appear side by side in the navigation 
 menu. We could try to see if  display:inline works as well. later...*/
 #menu li{
-	float: left;
+	float: left; /*Is this really needed ?*/
 	background: url(../img/sep.png) no-repeat;
 	position: relative;
 }
@@ -71,11 +71,39 @@ list items in menu) of an element (e.g our menu). When we set the clear property
 	clear: both;
 }
 
-#menu li{
-	float: left;/*Is this really needed ?*/
+#menu a{
+	float: left;
 	padding: 12px 30px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	font: bold 12px Arial, Helvetica;
+}
+
+
+/*This will hide the sub menus contained in each menu of the nav bar*/
+#menu ul{
+	margin: 20px 0 0 0;
+	opacity: 0;
+	visibility: hidden;
+	/*Remove this line & you will see that the main menu items will be on different lines. Why?*/
+	position: absolute;
+	top: 38px;
+	left: 0;
+	z-index: 1;
+	background:linear-gradient(#1ebdbe, #107677);
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	transition: all .2s ease-in-out;/*refer to the demo for transitions*/
+}
+
+/* This will display the sub menus under the main menu list items.
+
+What is X > Y ? The > selects the immediate children of type Y contained in X. 
+It will NOT select elements of type Y which occur inside the children.
+*/
+#menu li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
 }

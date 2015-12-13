@@ -1,0 +1,17 @@
+Example:
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+Explanation:
+http://stackoverflow.com/questions/4151896/what-is-the-precise-explanation-of-box-shadow-and-moz-box-shadow-in-css
+
+Well, imagine that the box shadow starts as a box, the same size as the content, of the specified shadow colour (say black for argument's sake).
+
+This box starts life the same size and shape as the content, and right behind it - so, essentially, invisible.
+
+The two distance values will shift it up, down, left or right - so that it will "peek" out from behind the content. At this point, it will still be a box of the same size as its content, and will have sharp edges.
+
+The spread value will cause this box to expand by the specified amount - so it will be bigger or smaller than its content box. Visually, the higher the spread, the further "back" the shadow appears (it gives the illusion that the box is a long way away from the surface that it's casting its shadow on).
+
+The blur value simply causes the edges to blur smoothly into the background, fading from the shadow colour to the background colour.
