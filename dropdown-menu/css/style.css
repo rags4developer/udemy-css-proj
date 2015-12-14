@@ -281,4 +281,10 @@ chrome developer tools: <a href="">Web Design::after</a>
 	#menu ul a:hover{
 		background: none;
 	}
+
+	/*Remove the triangle menu pointers. Note that ul:after is different from ul :after. The former
+	inserts a pseudo element, while the latter selects all the :after pseudo elements*/
+	#menu ul li :after{
+		display:none;
+	}
 }
