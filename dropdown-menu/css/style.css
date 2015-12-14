@@ -133,3 +133,31 @@ It will NOT select elements of type Y which occur inside the children.
 #menu ul a:hover{
 	background:linear-gradient(#1ebdbe, #107677);
 }
+
+/*
+This code creates a triangle shaped arrow on top of any sub menu box. The arrow should point to the
+parent item of the sub menu, i.e upwards. Refer notes folder on how to make triangles with css.
+
+An example of what this will select the link element <a href="">Web Design</a>. After selecting it, put
+a pseudo element immediately after the contents of the link element. This is what it will look like in
+chrome developer tools: <a href="">Web Design::after</a> 
+*/
+#menu ul li:first-child > a:after{
+	content: "";/*no content*/
+	position: absolute;
+	left: 40px;
+	top: -6px;
+	border-bottom: 6px solid #1ebdbe;/*Actually a rectangle which will be chopped by next 2 lines to make triangle*/
+	border-left: 6px solid transparent;/*provides left side of triangle*/
+	border-right: 6px solid transparent;/*provides right side of triangle*/
+}
+
+/*A left pointing arrow for sub menus of sub menus.*/
+#menu ul ul li:first-child > a:after{
+	left: -12px;
+	top: 50%;
+	margin-top: -6px;
+	border-right: 6px solid #107677;/*Actually a rectangle which will be chopped by next 2 lines to make triangle*/
+	border-top: 6px solid transparent;/*provides side of triangle*/
+	border-bottom: 6px solid transparent;/*provides side of triangle*/
+}
