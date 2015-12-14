@@ -136,7 +136,8 @@ It will NOT select elements of type Y which occur inside the children.
 
 /*
 This code creates a triangle shaped arrow on top of any sub menu box. The arrow should point to the
-parent item of the sub menu, i.e upwards. Refer notes folder on how to make triangles with css.
+parent item of the sub menu, i.e upwards. Refer notes folder on how to make triangles with css, OR
+see the quick explanation here - http://codepen.io/chriscoyier/pen/lotjh
 
 An example of what this will select the link element <a href="">Web Design</a>. After selecting it, put
 a pseudo element immediately after the contents of the link element. This is what it will look like in
