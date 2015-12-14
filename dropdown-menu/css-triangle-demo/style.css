@@ -1,0 +1,35 @@
+div{
+	float: left;
+	margin: 20px;
+	background: gray;/*REMOVE this to see shapes properly*/
+}
+
+.triangle{
+	height: 0px;
+	width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid blue;
+}
+
+/*border-width is actually border thickness*/
+
+#div-border-demo {
+    border-color: yellow blue red green;/*top right bottom left*/
+    border-style: solid;
+    border-width: 25px 25px 25px 25px;/*top right bottom left*/
+    height: 50px;
+    width: 50px;
+}
+
+#trapezoid {
+	height: 0;
+	width: 75px;
+	border-style: solid;
+	border-color: #bc6 transparent transparent transparent;/*top right bottom left*/
+	border-width: 150px 25px 0px 25px;/*top right bottom left*/
+}
+
+a{
+	font-size: 25px;
+}
