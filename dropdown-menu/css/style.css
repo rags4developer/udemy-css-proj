@@ -22,7 +22,11 @@ body{
 /*Floating all LI left to make them appear side by side in the navigation 
 menu. We could try to see if  display:inline works as well. later...*/
 #menu li{
-	float: left; /*Is this really needed ?*/
+	/*What float:left does - UL and LI are block elements and will be stacked vertically.
+	So, all elements under main menu will appear on the left of screen instead of under
+	its parent menu item.
+	*/
+	float: left;
 	background: url(../img/sep.png) no-repeat;
 	position: relative;
 }
@@ -86,7 +90,8 @@ list items in menu) of an element (e.g our menu). When we set the clear property
 	margin: 20px 0 0 0;
 	opacity: 0;
 	visibility: hidden;
-	/*Remove this line & you will see that the main menu items will be on different lines. Why?*/
+	/*Remove this line & you will see that the main menu items will be on different lines, because
+	UL and LI are block elements.*/
 	position: absolute;
 	top: 38px;
 	left: 0;
@@ -161,4 +166,119 @@ chrome developer tools: <a href="">Web Design::after</a>
 	border-right: 6px solid #107677;/*Actually a rectangle which will be chopped by next 2 lines to make triangle*/
 	border-top: 6px solid transparent;/*provides side of triangle*/
 	border-bottom: 6px solid transparent;/*provides side of triangle*/
+}
+
+/*Hide when screen size is 700px or more.*/
+#menu-trigger{
+	display: none;
+}
+
+/*When screen width is less than 700px, apply the css below.*/
+@media(max-width: 700px){
+	#menu-wrap{
+		position: relative;
+	}
+	
+	#menu-wrap *{
+		/*Refer the notes folder for box-sizing.*/
+		box-sizing: border-box;
+	}
+
+	/*Display the menu-trigger on top of the menu. We will hide the menu in the code 
+	after this code. Hmm...other than display:block, everything else is cosmetic code ???*/
+	#menu-trigger{
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		cursor: pointer;
+		padding: 0 0 0 35px;
+		border: 1px solid #107677;
+		color: #fff;
+		font-weight: bold;
+		background-color: #111;
+		background: url(../img/menu.png) no-repeat 10px center, linear-gradient(#1ebdbe, #107677);
+		border-radius: 6px;
+	}
+
+	/*Hide the menu. Looks like only margin and display are doing something visible.???*/
+	#menu{
+		margin: 0;
+		padding: 10px;
+		position: absolute;
+		top: 40px;
+		width: 100%;
+		z-index: 1;
+		display: none;
+		box-shadow: none;
+	}
+
+	/*A triangle arrow pointer to point to the responsive version of menu bar.*/
+	#menu:after{
+		content: '';
+		position: absolute;
+		left: 25px;
+		top: -8px;
+		border-bottom: 8px solid #107677;/*Actually a rectangle which will be chopped by next 2 lines to make triangle*/
+		border-left: 8px solid transparent;/*provides left side of triangle*/
+		border-right: 8px solid transparent;/*provides right side of triangle*/		
+	}
+
+	#menu ul{
+		/*position:static - The element will flow into the page as it normally would.
+		Its used only to forcefully-remove some existing positioning.*/
+		position: static;
+		/*undoing the menu ul settings for mobile screens. Menu ul was hidden, opacity=0.
+		Resetting to show all the sub menus under main menu & their items.*/
+		visibility: visible;
+		opacity: 1;
+		margin: 0;
+		background: none;
+		box-shadow: none;
+	}
+
+	/*Just cosmetic changes ?*/
+	#menu ul ul{
+		margin: 0 0 0 20px;
+		box-shadow: none;
+	}
+	
+	/*undoing the menu li setting for mobile screens. This should stack all the items
+	vertically, but some items like project 1 etc are not. For that, we will have to 
+	style the links in the menu. This is done later*/
+	#menu li{
+		position: static;
+		display: block;
+		float: none;
+		border: 0;
+		margin: 5px;
+		box-shadow: none;
+		background: none; /*Will remove the separators*/
+	}
+
+	#menu ul li{
+		margin-left: 20px;
+		box-shadow: none;
+	}
+
+	/*Stacks all the menu links vertically.*/
+	#menu a{
+		display: block;
+		float: none;
+		padding: 0;
+		color: #fff;
+	}
+
+	#menu a:hover{
+		color: #fafafa;
+	}
+	
+	/*Makes the links compact. Now, the overall top-down menu will have a lower height.*/
+	#menu ul a{
+		padding: 0;
+		width: auto;
+	}
+
+	#menu ul a:hover{
+		background: none;
+	}
 }
