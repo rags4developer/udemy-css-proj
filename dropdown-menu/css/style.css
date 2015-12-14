@@ -128,3 +128,8 @@ It will NOT select elements of type Y which occur inside the children.
 	float: none; /*Is this needed ?*/
 	text-transform: none; /*to control the case of text.*/
 }
+
+/*change the background of links when you hover over them.*/
+#menu ul a:hover{
+	background:linear-gradient(#1ebdbe, #107677);
+}
