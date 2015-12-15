@@ -11,6 +11,118 @@
 	</head>
 
 	<body>
+		<!--We created a class called container and NOT id. We will use this class to mark all elements
+		such as divs whose contents we want to keep in the center of the page.-->
 		
+		<heade>
+			<div class="container">
+				<h1>Responsive CSS Timeline</h1>
+			</div>
+		</header>
+		
+		<section>
+			<div id="timeline">
+
+				<!--the tl-block div will contain anything that we add to THE line in our timeline.
+				A block can contain only an year OR only a set of events.-->
+				<div class="tl-block">
+					<div class="tl-year">
+						<div>2012</div>
+					</div><!--tl-year-->
+				</div><!--tl-block-->
+				
+				<div class="tl-block">
+					<div class="tl-event">
+						<!--The event-l class event divs are to be placed on the left of the timeline.-->
+						<div class="event-l">
+							<div>
+								<!--using the html5 time tag.-->
+								<h3><time datetime="2012-03-12 11:00">March 12</time> Event One</h3>
+								<p>Perceptual reality gives rise to unparalleled truth.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-event">
+						<div class="event-r">
+							<div>
+								<h3><time datetime="2012-09-10 6:00">Sep 10</time> Event Two</h3>
+								<p>Quantum physics creates the expansion of happiness.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+				
+				<div class="tl-block">
+					<div class="tl-event">
+						<div class="event-l">
+							<div>
+								<h3><time datetime="2012-12-22 6:00">Dec 22</time> Event Three</h3>
+								<p>The unexplainable is inextricably connected to precious space time events.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-year">
+						<div>2013</div>
+					</div><!--tl-year-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-event">
+						<div class="event-r">
+							<div>
+								<h3><time datetime="2013-01-12 11:00">Jan 12</time> Event Four</h3>
+								<p>Your heart is the womb of a symphony of neural networks.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-event">
+						<div class="event-l">
+							<div>
+								<h3><time datetime="2013-04-22 6:00">Apr 22</time> Event Five</h3>
+								<p>The future opens quantum human observation.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-year">
+						<div>2014</div>
+					</div><!--tl-year-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-event">
+						<div class="event-r">
+							<div>
+								<h3><time datetime="2014-02-17 11:00">Feb 17</time> Event Six</h3>
+								<p>Your heart is the womb of a symphony of neural networks.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+
+				<div class="tl-block">
+					<div class="tl-event">
+						<div class="event-l">
+							<div>
+								<h3><time datetime="2014-05-02 6:00">May 02</time> Event Seven</h3>
+								<p>Your heart is the womb of a symphony of neural networks.</p>
+							</div>
+						</div>
+					</div><!--tl-event-->
+				</div><!--tl-block-->
+
+			</div><!--timeline-->
+		</section>
 	</body>
 </html>
