@@ -3,3 +3,38 @@
 	margin:0;
 	padding:0;
 }
+
+body{
+	font-family: 'Arial', sans-serif;
+	background: #e9f0f5;
+}
+
+p{
+	margin: 10px 0;
+}
+
+/*We want to set a fixed width for the container when the window size is 940px or more because we 
+don't want the text to stretch out all the way to the right side of the screen.*/
+.container{
+	width: 940px;
+	overflow: auto;/*If content overflows out of this div, only then scrollbars will be displayed.*/
+	margin: auto;/*Has the effect of positioning the div in the center of the screen. hint: draw borders*/
+}
+
+header{
+	background: #5e6482;
+	height: 70px;
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer{
+	background: #5e6482;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
