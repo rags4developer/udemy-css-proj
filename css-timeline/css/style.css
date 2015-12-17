@@ -4,7 +4,7 @@
 	padding:0;
 }
 
-body{
+body {
 	font-family: 'Arial', sans-serif;
 	background: #e9f0f5;
 }
@@ -33,6 +33,32 @@ header{
 	background: url(../img/line.png) repeat-y 50% 0;
 	min-height: 700px;
 	margin: 20px;/*top, bottom = 20px, left, right = 0. Keeps gap between it & header & footer*/
+}
+
+.tl-block{
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.tl-year{
+	background: url(../img/point-big.png) no-repeat 50% 0;
+	display: block;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;/*Creates gap between #timeline and #tl-year. This shows more of line.*/
+}
+
+.tl-year div{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	padding-top: 23px;
+	text-center: center;
 }
 
 footer{
