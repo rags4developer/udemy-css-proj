@@ -29,6 +29,12 @@ header{
 	padding-top: 20px;
 }
 
+#timeline{
+	background: url(../img/line.png) repeat-y 50% 0;
+	min-height: 700px;
+	margin: 20px;/*top, bottom = 20px, left, right = 0. Keeps gap between it & header & footer*/
+}
+
 footer{
 	background: #5e6482;
 	height: 30px;
